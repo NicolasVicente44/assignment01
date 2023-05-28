@@ -95,7 +95,7 @@ function textToSpeech(text) {
   speechSynthesis.speak(speech);
 }
 
-function playback_on_click() {
+function playback_on_click() {//play the story through audio using built in tts 
   const userStory = chosenNoun1 + " " + chosenVerb + " " + chosenAdjective + " " + chosenNoun2 + " " + chosenSetting;
   story.textContent = userStory;
   textToSpeech(userStory);
