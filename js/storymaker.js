@@ -39,7 +39,7 @@ let chosenSetting = "";
 function noun1_on_click() {
     // Get a random element from the nouns array
     chosenNoun1 = nouns[Math.floor(Math.random() * nouns.length)];
-    choosenNoun1.textContent = chosenNoun1;
+    choosenNoun1.textContent = chosenNoun1; //assign the random value to the paragraph in the html
 }
 
 function verb_on_click() {
@@ -70,7 +70,7 @@ function playback_on_click() {
 
 // Grab a random element from arrays, concatenate, and display
 function random_on_click() {
-    chosenNoun1 = nouns[Math.floor(Math.random() * nouns.length)];
+    chosenNoun1 = nouns[Math.floor(Math.random() * nouns.length)]; //random noun from the losit of nouns 
     chosenVerb = verbs[Math.floor(Math.random() * verbs.length)];
     chosenAdjective = adjectives[Math.floor(Math.random() * adjectives.length)];
     chosenNoun2 = secondNouns[Math.floor(Math.random() * secondNouns.length)];
@@ -80,7 +80,7 @@ function random_on_click() {
     story.textContent = userStory;
 }
 
-function resetStory () {
+function resetStory () { //set all te p eleements back to nothing 
     story.textContent = "";
     choosenNoun1.textContent = "";
     choosenVerb.textContent = "";
